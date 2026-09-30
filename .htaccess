@@ -1,0 +1,22 @@
+# Apache configuration for ESG-SMP
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(?:app|config|database|tests|views)(?:/|$) - [F,L,NC]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?route=$1 [QSA,L]
+</IfModule>
+
+# Security: Prevent direct listing of uploads folder
+Options -Indexes
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "same-origin"
+</IfModule>
+
+# Source, configuration, database and test artifacts must not be web-accessible.
+<FilesMatch "(^\.|\.(?:sql|md|log|ini|env|bak|dist)$)">
+    Require all denied
+</FilesMatch>

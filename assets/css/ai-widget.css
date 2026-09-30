@@ -1,0 +1,17 @@
+.ai-widget-toggle { position:fixed; right:24px; bottom:24px; z-index:1080; width:58px; height:58px; border:0; border-radius:50%; background:linear-gradient(135deg,#10b981,#1b365d); color:#fff; box-shadow:0 8px 24px rgba(27,54,93,.3); font-size:1.55rem; cursor:pointer; transition:transform .2s, box-shadow .2s; }
+.ai-widget-toggle:hover { transform:translateY(-3px) scale(1.04); box-shadow:0 12px 28px rgba(27,54,93,.4); }
+.ai-widget-toggle:focus-visible { outline:3px solid #fbbf24; outline-offset:3px; }
+.ai-widget-pulse { position:absolute; right:2px; top:2px; width:12px; height:12px; border-radius:50%; background:#34d399; border:2px solid #fff; }
+.ai-widget-panel { position:fixed; right:24px; bottom:94px; z-index:1079; width:min(390px,calc(100vw - 32px)); height:min(570px,calc(100vh - 125px)); min-height:360px; overflow:hidden; display:flex; flex-direction:column; border:1px solid #d8e4dc; border-radius:16px; background:#fff; box-shadow:0 16px 45px rgba(27,54,93,.25); }
+.ai-widget-panel[hidden] { display:none; }
+.ai-widget-header { flex:0 0 auto; display:flex; justify-content:space-between; align-items:center; padding:14px 16px; color:#fff; background:linear-gradient(135deg,#1e4620,#1b365d); }
+.ai-widget-header strong { display:block; font-size:1rem; }
+.ai-widget-header small { display:block; margin-top:2px; color:rgba(255,255,255,.76); font-size:.72rem; }
+.ai-widget-messages { flex:1; overflow-y:auto; padding:14px; background:#f4f7f5; }
+.ai-widget-message { max-width:88%; margin-bottom:10px; padding:9px 11px; border-radius:13px; white-space:pre-wrap; line-height:1.5; font-size:.88rem; }
+.ai-widget-message.bot { margin-right:auto; border:1px solid #dfe9e2; background:#fff; color:#26352b; }
+.ai-widget-message.user { margin-left:auto; background:#1e4620; color:#fff; }
+.ai-widget-message.warning { margin-right:auto; border:1px solid #ffecb5; background:#fff3cd; color:#664d03; }
+.ai-widget-footer { flex:0 0 auto; padding:10px; border-top:1px solid #e5ebe7; background:#fff; }
+.ai-widget-status { margin-bottom:7px; color:#6b7a70; font-size:.72rem; }
+@media (max-width:575px) { .ai-widget-toggle { right:16px; bottom:16px; } .ai-widget-panel { right:16px; bottom:86px; width:calc(100vw - 32px); height:calc(100vh - 112px); } }
