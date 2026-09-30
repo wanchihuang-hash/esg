@@ -5,21 +5,31 @@
 
 ---
 
-## 系統存取資訊
+[![Live Demo](https://img.shields.io/badge/Demo-Online%20System-brightgreen?style=for-the-badge&logo=googlechrome)](https://darksalmon-eagle-978314.hostingersite.com/wanchi3366/)
+[![PHP Version](https://img.shields.io/badge/PHP-8.0%20%7C%208.3-blue?style=for-the-badge&logo=php)](https://www.php.net/)
+[![Database](https://img.shields.io/badge/MySQL-MariaDB-orange?style=for-the-badge&logo=mysql)](https://mariadb.org/)
+[![Standards](https://img.shields.io/badge/Standards-ISO%2014064%20%7C%20GRI%202021-success?style=for-the-badge)](https://www.globalreporting.org/)
 
-- **系統首頁網址**：[http://localhost/ESG/](http://localhost/ESG/)
-- **資料庫名稱**：`esg_system`
+---
+
+## 🌐 專屬系統線上運行與體驗
+
+本系統已於雲端正式部署上線，提供完整資料庫與前後端即時互動環境，免安裝即可直接透過瀏覽器公開瀏覽與操作：
+
+- **🚀 專屬線上系統入口**：👉 **[https://darksalmon-eagle-978314.hostingersite.com/wanchi3366/](https://darksalmon-eagle-978314.hostingersite.com/wanchi3366/)**
+- **💻 本機開發環境**：`http://localhost/ESG/`
+- **📦 GitHub 開源倉庫**：[https://github.com/wanchihuang-hash/esg](https://github.com/wanchihuang-hash/esg)
 
 ### 系統預設測試帳號清單 (RBAC 五大權限角色)
-系統提供頂部快速切換角色功能，亦可使用以下帳號密碼登入：
+登入系統首頁後，可使用上方**角色切換快捷按鈕**或以下預設帳號登入體驗不同業務情境：
 
 | 角色名稱 (Role) | 登入帳號 (Username) | 預設密碼 (Password) | 所屬單位 | 核心職責與操作權限 |
 | :--- | :--- | :--- | :--- | :--- |
-| **系統管理員 (Super Admin)** | `admin` | `admin123` | 綠能永續集團總部 | 全系統最高權限、組織架構管理、帳號角色分配、係數庫維護、全生命週期稽核日誌調閱 |
-| **ESG 委員會負責人 (ESG Lead)** | `lead` | `lead123` | 綠能永續集團總部 | 綜覽全集團 ESG 戰情室、年度減碳目標監控、審查跨廠區彙總數據、產製 GRI 報告書、年度鎖檔 |
-| **廠區審核主管 (Plant Reviewer)** | `reviewer` | `reviewer123` | 桃園大園一廠 | 線上審核所屬廠區提交之月度活動數據與佐證發票憑單，執行核准 (Approve)、退回補正 (Reject) |
-| **基層數據填報員 (Data Collector)** | `collector` | `collector123` | 桃園大園一廠 | 每月輸入水電度數、油量公升數等原始活動數據、上傳佐證單據掃描檔、提交審核 (Submit) |
-| **外部查證稽核員 (Lead Auditor)** | `auditor` | `auditor123` | 獨立查證機構 (KPMG/BSI) | 唯讀查閱權限、調閱 ISO 14064 計算公式、核對原始憑單、調閱全生命週期 Audit Log 異動軌跡 |
+| **系統管理員 (Super Admin)** | `admin` | `admin123` | 綠能永續集團總部 | 全系統最高權限、全域參數動態配置、組織架構管理、帳號角色分配、係數庫維護、全生命週期稽核日誌調閱 |
+| **ESG 委員會負責人 (ESG Lead)** | `lead` | `lead123` | 綠能永續集團總部 | 綜覽全集團 ESG 戰情室、年度減碳目標監控、審查跨廠區彙總數據、產製 GRI 報告書、年度鎖檔封存 |
+| **廠區審核主管 (Plant Reviewer)** | `reviewer` | `reviewer123` | 桃園大園一廠 | 線上審核所屬廠區提交之月度活動數據與佐證發票憑單，執行核准 (Approve)、退回補正 (Reject)、能資源月報審定 |
+| **基層數據填報員 (Data Collector)** | `collector` | `collector123` | 桃園大園一廠 | 每月輸入水電度數、油量公升數等原始活動數據、上傳佐證單據掃描檔、即時碳排核算、提交審核 (Submit) |
+| **外部查證稽核員 (Lead Auditor)** | `auditor` | `auditor123` | 獨立查證機構 (KPMG/BSI) | 唯讀查閱權限、調閱 ISO 14064 計算公式、核對原始憑單、調閱全生命週期 Audit Log 異動軌跡與 JSON Diff |
 
 ---
 
